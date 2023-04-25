@@ -49,7 +49,7 @@ def last_work():
     with open('result.csv', 'a', newline='', encoding='utf-8') as csvfile:
         writer = csv.writer(csvfile)
         if csvfile.tell() == 0:
-            writer.writerow(['Source', 'passport_dst', 'drive_dst', 'size', 'file_create_time'])
+            writer.writerow(['index', 'source', 'passport_dst', 'drive_dst', 'size', 'file_create_time'])
         for i, row in enumerate(result):
             writer.writerow([i + 1] + row)
 
