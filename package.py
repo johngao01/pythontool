@@ -19,6 +19,7 @@ for root, dirs, files in os.walk(folder):
         print(count, relative_path)
         z.write(file_path, relative_path)
         os.remove(file_path)
+
 z.close()
 end = time.time()
 
